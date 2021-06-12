@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.users_info_list{
+    position: fixed;
+    float: left;
+    width: 350px;
+    height: 100vh;
+    border-right: 1px solid #CCCCCC;
+}
+.chat_space{
+    position: fixed;
+    float: right;
+    overflow: hidden;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+}
+
+.users_info_list .user_info_wrap{
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(112, 91, 91);
+    width: 50%;
+}
+
+/* ユーザー情報の画像 */
+.user_image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.user_image{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+/* ユーザー情報の画像 */
+
+/* チャットの他の人の画像 */
+.person_image img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.person_image{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+/* チャットの他の人の画像 */
