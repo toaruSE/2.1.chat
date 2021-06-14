@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    /* border-style: solid; */
 }
 
 .users_info_list{
@@ -13,16 +14,24 @@
 .chat_space{
     position: fixed;
     float: right;
+    width: calc(100% - 350px);
     overflow: hidden;
     height: 100vh;
     top: 0px;
     right: 0px;
 }
 
-.users_info_list .user_info_wrap{
+.user_info{
+    background-color: #CCFFFF;
+    padding-top: 10px;
+    border-left: solid 5px #1d72e9;
+}
+
+.user_info_wrap{
     display: inline-block;
     text-align: center;
-    background-color: rgb(112, 91, 91);
+    padding: 0px;
+    margin: 0px;
     width: 50%;
 }
 
@@ -48,6 +57,11 @@
 }
 /* ユーザー情報の画像 */
 
+/* 他の人のチャット表示 */
+.person_info{
+    padding: 5px 20px;
+}
+
 /* チャットの他の人の画像 */
 .person_image img {
     width: 100%;
@@ -61,6 +75,7 @@
 }
 
 .person_image{
+    display: inline-block;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -68,3 +83,86 @@
     position: relative;
 }
 /* チャットの他の人の画像 */
+
+.person_chat_wrap{
+    display: inline-block;
+    padding: 0px;
+}
+.person_message{
+    position: relative;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+}
+.person_message:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #e0edff;
+}
+/* 他の人のチャット表示 */
+
+/* 私のチャット表示 */
+.my_info{
+    display: block;
+    margin: 0 0 0 auto;
+}
+.my_chat_wrap{
+    text-align: right;
+}
+
+.my_message{
+    position: relative;
+    display: inline-block;
+    margin: 12px 15px 12px 0;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    background: #e0edff;
+}
+.my_message:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -15px;
+    border: 7px solid transparent;
+    border-left: 7px solid #e0edff;
+} 
+/* 私のチャット表示 */
+
+/* 送信フォーム */
+.form{
+    position: fixed;
+    left: 400px;
+    bottom: 0;
+    width: 100%;
+}
+
+.form .msg{
+    height: 30px;
+    width: 40%;
+    margin:0px 0px 10px 0px;
+    text-align: left;
+}
+
+.form .msg::placeholder {
+    text-align: center;
+}
+
+.form .btn{
+    height: 40px;
+    width: 10%;
+    background-color: #24ffd0;
+    margin: 0px 0px 10px 0px;
+}
+
+/* 送信フォーム */
