@@ -50,7 +50,7 @@
         <!-- 他の人のチャット -->
 
         <!-- 私のチャット -->
-        <div class="my_info">
+        <div class="my_info" id="my_info">
             <div class="my_chat_wrap">
                 <div class="my_message">
                     お疲れ様です。
@@ -72,25 +72,25 @@
                     総務経理FAQ Cogmo Attend
                 </div>
                 <div class="person_message">
-                    こんにちは。
+                    お疲れ様です。
                 </div>
                 <div class="transmission_time">
-                    12:35
+                    12:37
                 </div>
             </div>
         </div>
         <!-- 他の人のチャット -->
+        <div id="msgs_box"></div>
 
         <!-- 送信フォーム -->
-        <div class="form">
-            <form method="post" action="/">
-                <input type="text" class="msg" placeholder="ENTERキーで送信(上限800文字)">
-                <input type="submit" class="btn" value="送信">
-            </form>
-        </div>
+        <form class="form" name="myForm">
+            <input type="text" class="msg" name="message" id="message" placeholder="ENTERキーで送信(上限800文字)">
+            <input type="submit" class="btn" value="送信" id="btn">
+        </form>
         <!-- 送信フォーム -->
     </div>
     <!-- チャット -->
-    
+    <script src="js/message.js" type="text/javascript"></script>
 </body>
 </html>
+<!-- src="./js/message.js" -->
